@@ -6,7 +6,7 @@ This document is trying to make sense how to drive Heltec Automation HT-1303 (SX
 
 ## Preparation
 
-- A [Raspberry Pi]([Raspberry Pi 4 Model B – Heltec Automation](https://heltec.org/project/raspberry-pi4-model-b/)) (ROI3, RPI4, Zero, etc. are also fine)
+- A [Raspberry Pi](https://heltec.org/project/raspberry-pi4-model-b/) (RPI3, RPI4, Zero, etc. are also fine)
 - [HT-1303 LoRa Concentrator Module]([HT1303 LoRaWAN Concentrator Module – Heltec Automation](https://heltec.org/project/ht1303/))
 - [Raspberry Pi Interposer Board](https://heltec.org/project/ht1303-converter/)
 
@@ -21,7 +21,7 @@ Plug the HT-1303 module into the adapter module, and  connect the adapter module
 On the Linux system `~` path, by running the following commands to install HT-1303 drive.
 
 ```shell
-git clone https://github.com/HelTecAutomation/Lora-net-sx1302 lora
+git clone https://github.com/HelTecAutomation/ht-1303.git lora
 cd lora/packet_forwarder
 cp -f global_conf_EU868.json global_conf.json  //use the corresponding region configure file
 nano global_conf.json //edit the config file

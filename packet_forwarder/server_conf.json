@@ -1,0 +1,8 @@
+{
+  "server_conf":{
+    "enable":1,
+    "server_address": "lora.heltec.org",
+    "serv_port_up": 1700,
+    "serv_port_down": 1700
+  }
+}

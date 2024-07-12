@@ -1,0 +1,14 @@
+[Unit]
+Description=packet forwarder
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Restart=always
+RestartSec=30
+WorkingDirectory=/home/pi/lora/packet_forwarder/
+ExecStartPre=/home/pi/lora/packet_forwarder/update_gwid.sh /home/pi/lora/packet_forwarder/global_conf.json
+ExecStart=/home/pi/lora/packet_forwarder/lora_pkt_fwd
+
+[Install]
+WantedBy=multi-user.target
